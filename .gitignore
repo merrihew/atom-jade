@@ -26,3 +26,10 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# OS generated files
+.DS_Store
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
