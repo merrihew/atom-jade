@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/merrihew/atom-jade",
   "engines": {
-    "atom": "*",
+    "atom": ">0.50.0 <2.0.0",
     "node": "*"
   }
 }
