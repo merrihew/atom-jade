@@ -3,6 +3,22 @@
     commentStart: '//- '
   autocomplete:
     symbols:
+      # classes and ids have highest priority
+      selector:
+        selector: '.class, .id'
+        typePriority: 1
+
+      # tags that have been used have next priority
+      tag:
+        selector: '.tag.any, .script'
+        typePriority: 2
+
+      # attributes have next priority
+      property:
+        selector: '.attribute-name'
+        typePriority: 3
+
+      # builtin Jade functions have next priority
       builtins:
         suggestions: [
           {
@@ -78,14 +94,14 @@
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'for ${1:$value} in ${2:$array}$0'
+            snippet: 'each ${1:$value} in ${2:$array}$0'
             description: 'Iterates over each value in an array or object.'
             descriptionMoreURL: 'http://jade-lang.com/reference/iteration'
           },
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'for ${1:$value}, ${2:$key} in ${3:$array}$0'
+            snippet: 'each ${1:$value}, ${2:$key} in ${3:$array}$0'
             description: 'Iterates over each value and key in an array or object.'
             descriptionMoreURL: 'http://jade-lang.com/reference/iteration'
           },
