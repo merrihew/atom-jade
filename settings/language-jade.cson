@@ -51,7 +51,7 @@
             type: 'function'
             rightLabel: 'Jade builtin'
             snippet: 'else$0'
-            description: 'Enters block only all preceding conditions fail.'
+            description: 'Enters block only if all preceding conditions fail.'
             descriptionMoreURL: 'http://jade-lang.com/reference/conditionals'
           },
           {
