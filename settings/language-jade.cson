@@ -5,18 +5,22 @@
     symbols:
       # classes and ids have highest priority
       selector:
-        selector: '.class, .id'
+        selector: '.class.jade, .id.jade'
         typePriority: 1
 
       # tags that have been used have next priority
       tag:
-        selector: '.tag.any, .script'
+        selector: '.tag.any.jade, .script.jade'
         typePriority: 2
 
       # attributes have next priority
       property:
-        selector: '.attribute-name'
+        selector: '.attribute-name.jade'
         typePriority: 3
+
+      value:
+        selector: '.string.quoted.jade'
+        typePriority: 4
 
       # builtin Jade functions have next priority
       builtins:
