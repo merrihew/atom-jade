@@ -20,7 +20,9 @@ patterns: [
     captures:
       1:
         name: 'keyword.control.jade'
-    match: '^\\s*\\b(block)\\b'
+      2:
+        name: 'variable.block.jade'
+    match: '^\\s*\\b(block)\\b\\s*\\b([\\w\\-]+)'
   }
   {
     match: '^(!!!)(\\s*[a-zA-Z0-9-_]+)?'
