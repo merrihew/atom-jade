@@ -1,7 +1,8 @@
+name: 'Jade'
+scopeName: 'source.jade'
 fileTypes: [
   'jade'
 ]
-name: 'Jade'
 patterns: [
   {
     captures:
@@ -14,6 +15,12 @@ patterns: [
       1:
         name: 'keyword.control.import.extends.jade'
     match: '^\\s*\\b(extends)\\b'
+  }
+  {
+    captures:
+      1:
+        name: 'keyword.control.jade'
+    match: '^\\s*\\b(block)\\b'
   }
   {
     match: '^(!!!)(\\s*[a-zA-Z0-9-_]+)?'
@@ -121,18 +128,96 @@ patterns: [
     name: 'meta.mixin.jade'
   }
   {
-    begin: '^\\s*(-|=|!=)'
+    begin: '^\\s*(-|=|!=)?\\b(each)\\b'
+    beginCaptures:
+      2:
+        name: 'keyword.control.jade'
     end: '$'
     name: 'source.js.embedded.jade'
     patterns: [
       {
         include: 'source.js'
       }
+    ]
+  }
+  {
+    begin: '^\\s*(-|=|!=)?\\b(while)\\b'
+    beginCaptures:
+      2:
+        name: 'keyword.control.jade'
+    end: '$'
+    name: 'source.js.embedded.jade'
+    patterns: [
       {
-        match: '\\b(each)\\b'
-        name: 'keyword.control.js'
+        include: 'source.js'
       }
     ]
+  }
+  {
+    begin: '^\\s*(-|=|!=)?\\b(if)\\b'
+    beginCaptures:
+      2:
+        name: 'keyword.control.jade'
+    end: '$'
+    name: 'source.js.embedded.jade'
+    patterns: [
+      {
+        include: 'source.js'
+      }
+    ]
+  }
+  {
+    begin: '^\\s*(-|=|!=)?\\b(else)\\b\\s*\\b(if)\\b'
+    beginCaptures:
+      2:
+        name: 'keyword.control.jade'
+      3:
+        name: 'keyword.control.jade'
+    end: '$'
+    name: 'source.js.embedded.jade'
+    patterns: [
+      {
+        include: 'source.js'
+      }
+    ]
+  }
+  {
+    captures:
+      2:
+        name: 'keyword.control.jade'
+    match: '^\\s*(-|=|!=)?\\b(else)\\b'
+  }
+  {
+    begin: '^\\s*(-|=|!=)?\\b(case)\\b'
+    beginCaptures:
+      2:
+        name: 'keyword.control.jade'
+    end: '$'
+    name: 'source.js.embedded.jade'
+    patterns: [
+      {
+        include: 'source.js'
+      }
+    ]
+  }
+  {
+    begin: '^\\s*(-|=|!=)?\\b(when)\\b'
+    beginCaptures:
+      2:
+        name: 'keyword.control.jade'
+    end: '$'
+    name: 'source.js.embedded.jade'
+    patterns: [
+      {
+        include: 'source.js'
+      }
+    ]
+  }
+  {
+    captures:
+      2:
+        name: 'keyword.control.jade'
+    match: '^\\s*(-|=|!=)?\\b(default)\\b'
   }
   {
     begin: '^(\\s*)(script)'
@@ -278,4 +363,3 @@ repository:
         include: '#tag-generic-attribute'
       }
     ]
-scopeName: 'source.jade'
