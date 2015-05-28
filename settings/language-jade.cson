@@ -24,98 +24,98 @@
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'case ${1:$variable}$0'
+            snippet: 'case ${1:variable}$0'
             description: 'A switch between possible variable cases.'
             descriptionMoreURL: 'http://jade-lang.com/reference/case'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'when ${1:$value}$0'
+            snippet: 'when ${1:value}$0'
             description: 'Test if switch variable matches value.'
             descriptionMoreURL: 'http://jade-lang.com/reference/case'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
             snippet: 'default$0'
             description: 'Fall through if switch when cases fail.'
             descriptionMoreURL: 'http://jade-lang.com/reference/case'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'if ${1:$condition}$0'
+            snippet: 'if ${1:condition}$0'
             description: 'Enters block only if condition is true.'
             descriptionMoreURL: 'http://jade-lang.com/reference/conditionals'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'else if ${1:$condition}$0'
+            snippet: 'else if ${1:condition}$0'
             description: 'Enters block only if condition is true.'
             descriptionMoreURL: 'http://jade-lang.com/reference/conditionals'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'unless ${1:$condition}$0'
+            snippet: 'unless ${1:condition}$0'
             description: 'Enters block only if condition is false.'
             descriptionMoreURL: 'http://jade-lang.com/reference/conditionals'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
             snippet: 'else$0'
             description: 'Enters block only if all preceding conditions fail.'
             descriptionMoreURL: 'http://jade-lang.com/reference/conditionals'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'extends ${1:$file}$0'
+            snippet: 'extends ${1:file}$0'
             description: 'Extends allows for overrides to the parent block content.'
             descriptionMoreURL: 'http://jade-lang.com/reference/inheritance'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'include ${1:$file}$0'
+            snippet: 'include ${1:file}$0'
             description: 'Includes allow you to insert the contents of one jade file into another.'
             descriptionMoreURL: 'http://jade-lang.com/reference/includes'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'block ${1:$name}$0'
+            snippet: 'block ${1:name}$0'
             description: 'A block is simply a "block" of Jade that may be replaced within a child template.'
             descriptionMoreURL: 'http://jade-lang.com/reference/inheritance'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'each ${1:$value} in ${2:$array}$0'
+            snippet: 'each ${1:value} in ${2:array}$0'
             description: 'Iterates over each value in an array or object.'
             descriptionMoreURL: 'http://jade-lang.com/reference/iteration'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'each ${1:$value}, ${2:$key} in ${3:$array}$0'
+            snippet: 'each ${1:value}, ${2:key} in ${3:array}$0'
             description: 'Iterates over each value and key in an array or object.'
             descriptionMoreURL: 'http://jade-lang.com/reference/iteration'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'while ${1:$condition}$0'
+            snippet: 'while ${1:condition}$0'
             description: 'Iterates while condition is true.'
             descriptionMoreURL: 'http://jade-lang.com/reference/iteration'
-          },
+          }
           {
             type: 'function'
             rightLabel: 'Jade builtin'
-            snippet: 'mixin ${1:$name}$0'
+            snippet: 'mixin ${1:name}$0'
             description: 'Mixins allow you to create reusable blocks of jade.'
             descriptionMoreURL: 'http://jade-lang.com/reference/mixins'
           }
