@@ -1,5 +1,6 @@
 'fileTypes': [
   'jade'
+  'pug'
 ]
 'name': 'Jade'
 'patterns': [
