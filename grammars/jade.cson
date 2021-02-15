@@ -30,7 +30,7 @@
     'name': 'comment.block.jade'
   }
   {
-    'begin': '^(\\s*)(\\:markdown)'
+    'begin': '^(\\s*)(\\:mark(down|ed))'
     'beginCaptures':
       '2':
         'name': 'entity.name.function.jade'
